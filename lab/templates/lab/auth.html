@@ -1,0 +1,37 @@
+<head>
+	<title>Войти/Зарегаться</title>
+
+</head>
+<body>
+	{{errors}}
+	<form method='post'>
+		{% csrf_token %}
+		<p> <label​>
+ 			Логин:
+		 	<input type='text' name='username' >
+		 </label​></p>
+		<p> <label​>
+		 	Пароль:
+		 	<input type='password' name='password' >
+		 </label​></p>
+		<p> <label​>
+		 	Повторите ввод:
+		 	<input type='password' name='password2' >
+		 </label​></p>
+		<p><label​>
+ 			E-mail:
+		 	<input type='text' name='email' >
+		 </label​></p>
+		<p> <label​>
+ 			Имя:
+		 	<input type='text' name='first_name' >
+		 </label​></p>
+		 <p> <label​>
+ 			Фамилия:
+		 	<input type='text' name='last_name' >
+		 </label​></p>
+		 ​<button type="submit">Заргестрироваться</button>
+	</form​>
+<p><a href='enter'>Войти</a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+</body>

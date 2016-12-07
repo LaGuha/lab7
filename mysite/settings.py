@@ -28,6 +28,18 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'lab', # Or path to database file if using sqlite3.
+        'USER': 'root', # Not used with sqlite3.
+        'PASSWORD': '17021942', # Not used with sqlite3.
+        'HOST': 'localhost', # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '3306',
+        'OPTIONS': {'charset': 'utf8'},
+        'TEST_CHARSET': 'utf8', # Set to empty string for default. Not used with sqlite3.
+        }
+}
 
 # Application definition
 
@@ -75,18 +87,8 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'lab',
-        'USER': 'root',
-        'PASSWORD': '17021942',
-        'HOST': '127.0.0.1',
-        'PORT': 3306, # Стандартный порт MySQL
-        'OPTIONS': {'charset': 'utf8'},
-        'TEST_CHARSET': 'utf8'
-    }
-}
+12
+1
 
 
 # Password validation

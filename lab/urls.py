@@ -1,8 +1,10 @@
 from django.conf.urls import url
 from . import views
-from views import BookListView
+
 urlpatterns = [
-    url(r'^$', views.main, name='main'),
-    url(r'^books/$', BookListView.as_view()),
+    url(r'^$', views.auth, name='auth'),
+    url(r'^enter$', views.enter, name='enter'),
+    url(r'^1$', views.auth1, name='auth'),
+    url(r'^main/$', views.main, name='main'),
 
 ]

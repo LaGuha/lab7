@@ -1,0 +1,14 @@
+<head>
+	<title>Войти/Зарегаться</title>
+
+</head>
+<body>
+	{{errors}}
+	<form method='post'>
+		{% csrf_token %}
+			{{d.as_p}}
+		​<button type="submit">Заргестрироваться</button>
+	</form​>
+<p><a href='enter'>Войти</a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+</body>
