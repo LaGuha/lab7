@@ -6,6 +6,7 @@
 	{{errors}}
 	<form method='post'>
 		{% csrf_token %}
+			{{ d.subject.errors }}
 			{{d.as_p}}
 		​<button type="submit">Заргестрироваться</button>
 	</form​>

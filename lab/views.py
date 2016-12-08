@@ -15,6 +15,7 @@ def main(request):
 	
 	if request.GET.get('logout'):
 		logout(request)
+		return redirect('/enter')
 	return render(request,'lab/main.html',{'lane':lane})
 
 def auth(request):
@@ -86,5 +87,6 @@ def auth1(request):
 			if user is not None:            
 				login(request, user)
 				return redirect('main')
-	d=UserForm()	
-	return render(request,'lab/auth1.html',{'d':d})
+	else:
+		form=UserForm()	
+	return render(request,'lab/auth1.html',{'d':form})

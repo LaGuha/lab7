@@ -21,7 +21,7 @@ class UserForm(forms.Form):
 			)
 		if len(login) < 5:
 			raise forms.ValidationError(
-				"Пароль короткий"
+				"Login короткий"
 			)
 		if pas != pas2:
             # Only do something if both fields are valid so far.
